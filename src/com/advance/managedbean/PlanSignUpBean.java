@@ -4,6 +4,11 @@ import javax.faces.bean.ManagedBean;
 
 @ManagedBean
 public class PlanSignUpBean {
+	
+	public PlanSignUpBean()
+	{
+		
+	}
 
 	public String signup() {
 		if (Math.random()<0.2) {

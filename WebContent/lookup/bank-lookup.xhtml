@@ -7,19 +7,17 @@
 	xmlns:f="http://xmlns.jcp.org/jsf/core">
 
 <h:head>
-	<title> Insurance Plan Sign Up</title>
+	<title>Look Up</title>
 </h:head>
 
 <h:body>
 	<h:form>
 		<fieldset>
-			<legend>Insurance Plan Sign Up</legend>
-			First Name:<h:inputText></h:inputText><br/>
-			Last Name:<h:inputText></h:inputText><br/>
-			SSN:<h:inputText></h:inputText><br/>
-			<h:commandButton value="Sign Me Up!" action="#{PlanSignUpBean.signup}"></h:commandButton>
+			<legend>Bank Customer Lookup</legend>
+			Customer ID:<h:inputText value="#{bankingBean.customerId}" required="true"></h:inputText><br/>
+			Password:<h:inputText value="#{bankingBean.password}"></h:inputText><br/>
+			<h:commandButton value="show Current Balance" action="#{bankingBean.showBalance}"></h:commandButton>
 		</fieldset>
 	</h:form>
 </h:body>
-
 </html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+<h:head>
+	<title>Look Up</title>
+</h:head>
+
+<h:body>
+	<h:form>
+		<fieldset>
+			<legend>Bank Customer Lookup</legend>
+			<ul>
+				<li>First Name: #{bankingBean.customer.firstname}</li>
+				<li>Last Name: #{bankingBean.customer.lastname}</li>
+				<li>Customer ID: #{bankingBean.customer.id}</li>
+				<li>Balance: $#{bankingBean.customer.balance}</li>
+			</ul>
+		</fieldset>
+	</h:form>
+</h:body>
+</html>
