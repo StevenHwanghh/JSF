@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+<h:head>
+	<title>Study Plan</title>
+</h:head>
+
+<h:body>
+	<h:form>
+		<fieldset>
+			<legend>Study Plan</legend>
+			Email Address:
+			<h:inputText value="#{trainingForm.emailAddress}"></h:inputText><br/>
+			Favorite Language:
+			<h:inputText value="#{trainingForm.favoriteLanguage}"></h:inputText><br/>
+			Second Favorite Language:
+			<h:selectOneMenu value="#{trainingForm.secondFavoriteLanguage}">
+				<f:selectItems value="#{trainingForm.availabeLanguages}"></f:selectItems>
+			</h:selectOneMenu><br/>
+			Programmed with 5+ years?
+			<h:selectBooleanCheckbox value="#{trainingForm.expert}"></h:selectBooleanCheckbox><br/>
+			<h:commandButton value="Show Recommended Study Plan" action="#{trainingForm.showPlan}"></h:commandButton>
+		</fieldset>
+	</h:form>
+</h:body>
+</html>

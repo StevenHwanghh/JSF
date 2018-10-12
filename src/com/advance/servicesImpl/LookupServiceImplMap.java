@@ -12,7 +12,7 @@ public class LookupServiceImplMap implements LookupService {
 	
 	public LookupServiceImplMap() {
 		customers = new HashMap<Long,Customer>();
-		addCustomer(new Customer(1, "Mike", "Jobs", 1234.45));
+		addCustomer(new Customer(1, "Mike", "Jobs", 234.45));
 		addCustomer(new Customer(2, "Steven", "Bill", 11234.45));
 		addCustomer(new Customer(3, "Kevin", "Bush", -1234.45));
 	}

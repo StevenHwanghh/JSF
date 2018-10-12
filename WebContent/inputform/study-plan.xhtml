@@ -7,18 +7,17 @@
 	xmlns:f="http://xmlns.jcp.org/jsf/core">
 
 <h:head>
-	<title>Look Up</title>
+	<title>Study Plan</title>
 </h:head>
 
 <h:body>
 	<h:form>
 		<fieldset>
-			<legend>Bank Customer Lookup</legend>
+			<legend>Study Plan</legend>
 			<ul>
-				<li>First Name: #{bankingBean.customer.firstname}</li>
-				<li>Last Name: #{bankingBean.customer.lastname}</li>
-				<li>Customer ID: #{bankingBean.customer.id}</li>
-				<li>Balance: #{bankingBean.customer.balance}</li>
+				<ui:repeat var="language" value="#{trainingForm.languageToStudy}">
+					<li>#{language}</li>
+				</ui:repeat>
 			</ul>
 		</fieldset>
 	</h:form>

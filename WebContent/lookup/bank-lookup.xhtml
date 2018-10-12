@@ -15,7 +15,7 @@
 		<fieldset>
 			<legend>Bank Customer Lookup</legend>
 			Customer ID:<h:inputText value="#{bankingBean.customerId}" required="true"></h:inputText><br/>
-			Password:<h:inputText value="#{bankingBean.password}"></h:inputText><br/>
+			Password:<h:inputSecret value="#{bankingBean.password}"></h:inputSecret><br/>
 			<h:commandButton value="show Current Balance" action="#{bankingBean.showBalance}"></h:commandButton>
 		</fieldset>
 	</h:form>

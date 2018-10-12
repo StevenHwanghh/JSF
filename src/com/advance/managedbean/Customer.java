@@ -5,18 +5,18 @@ public class Customer {
 	private long id;
 	private String firstname;
 	private String lastname;
-	private double banlance;
+	private double balance;
 	
 	public Customer() {
 		super();
 	}
 	
-	public Customer(long id, String firstname, String lastname, double banlance) {
+	public Customer(long id, String firstname, String lastname, double balance) {
 		super();
 		this.id = id;
 		this.firstname = firstname;
 		this.lastname = lastname;
-		this.banlance = banlance;
+		this.balance = balance;
 	}
 	public long getId() {
 		return id;
@@ -36,11 +36,13 @@ public class Customer {
 	public void setLastname(String lastname) {
 		this.lastname = lastname;
 	}
-	public double getBanlance() {
-		return banlance;
+
+	public double getBalance() {
+		return balance;
 	}
-	public void setBanlance(double banlance) {
-		this.banlance = banlance;
+
+	public void setBalance(double balance) {
+		this.balance = balance;
 	}
 	
 }

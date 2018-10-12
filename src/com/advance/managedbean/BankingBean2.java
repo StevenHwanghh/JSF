@@ -1,19 +1,21 @@
 package com.advance.managedbean;
 
 import javax.faces.bean.ManagedBean;
+import javax.faces.bean.SessionScoped;
 
 import org.apache.commons.lang3.StringUtils;
 
 import com.advance.servicesImpl.LookupServiceImplMap;
 
 @ManagedBean
-public class BankingBean {
+@SessionScoped
+public class BankingBean2 {
 	
 	private String customerId;
 	private String password;
 	private Customer customer;
 	
-	public BankingBean() {
+	public BankingBean2() {
 		customerId = "1";
 	}
 	
@@ -33,7 +35,7 @@ public class BankingBean {
 		}else if(customer.getBalance()<0){
 			return "negative-balance";
 		}else if(customer.getBalance()<1000.0){
-			return "normal-balance";
+			return "normal-balance2?faces-redirect=true";
 		}else {
 			return "high-balance";
 		}
