@@ -1,13 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<faces-config
-    xmlns="http://xmlns.jcp.org/xml/ns/javaee"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_2.xsd"
-    version="2.2">
-<application>
-	<resource-bundle>
-		<base-name>resources.message</base-name>
-		<var>msg1</var>
-	</resource-bundle>
-</application>
+<faces-config xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_2.xsd"
+	version="2.2">
+	<application>
+		<resource-bundle>
+			<base-name>resources.message</base-name>
+			<var>msg1</var>
+		</resource-bundle>
+	</application>
+	<navigation-rule>
+		<from-view-id>start-page.xhtml</from-view-id>
+		<navigation-case>
+			<from-outcome>result1</from-outcome>
+			<to-view-id>result-page-1.xhtml</to-view-id>
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>result2</from-outcome>
+			<to-view-id>result-page-2.xhtml</to-view-id>
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>result3</from-outcome>
+			<to-view-id>result-page-3.xhtml</to-view-id>
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>too-short</from-outcome>
+			<to-view-id>error-page.xhtml</to-view-id>
+		</navigation-case>
+	</navigation-rule>
 </faces-config>

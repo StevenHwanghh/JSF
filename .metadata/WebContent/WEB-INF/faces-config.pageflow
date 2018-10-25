@@ -1,2 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<pageflow:Pageflow xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf15398935455190" configfile="/JSFAdance/WebContent/WEB-INF/faces-config.xml"/>
+<pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf15398935455190" configfile="/JSFAdance/WebContent/WEB-INF/faces-config.xml">
+  <nodes xsi:type="pageflow:PFPage" name="start-page.xhtml" x="228" y="24" id="pf15404998126605" referenceLink="//@navigationRule.0/@fromViewId|" outlinks="pf154050118965716 pf154050118965717 pf154050118965718 pf154050118965719" path="start-page.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="result-page-1.xhtml" id="pf154050118965720" referenceLink="//@navigationRule.0/@navigationCase.0/@toViewId|" inlinks="pf154050118965716" path="result-page-1.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="result-page-2.xhtml" id="pf154050118965721" referenceLink="//@navigationRule.0/@navigationCase.1/@toViewId|" inlinks="pf154050118965717" path="result-page-2.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="result-page-3.xhtml" id="pf154050118965822" referenceLink="//@navigationRule.0/@navigationCase.2/@toViewId|" inlinks="pf154050118965718" path="result-page-3.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="error-page.xhtml" id="pf154050118965823" referenceLink="//@navigationRule.0/@navigationCase.3/@toViewId|" inlinks="pf154050118965719" path="error-page.xhtml"/>
+  <links id="pf154050118965716" target="pf154050118965720" source="pf15404998126605" outcome="result1"/>
+  <links id="pf154050118965717" target="pf154050118965721" source="pf15404998126605" outcome="result2"/>
+  <links id="pf154050118965718" target="pf154050118965822" source="pf15404998126605" outcome="result3"/>
+  <links id="pf154050118965719" target="pf154050118965823" source="pf15404998126605" outcome="too-short"/>
+</pageflow:Pageflow>
